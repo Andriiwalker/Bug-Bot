@@ -320,11 +320,11 @@ try {
 		}
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© Raditya Zex_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_右RadBotz_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
              denz.relayWAMessage(res)
         }
         const grupinv = (teks) => {
-        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6282138919347-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/IlpQRKWDZed0GgVHmYJUbl', "groupName": `${NamaBot}`, "footerText": "*_© Raditya Zex_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
+        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6282138919347-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/IlpQRKWDZed0GgVHmYJUbl', "groupName": `${NamaBot}`, "footerText": "*_右RadBotz_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
             denz.relayWAMessage(grup)
         }
 		idttt = []
@@ -701,7 +701,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
 			heheh = ms(Date.now() - waktuafk)
-		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Raditya Zex_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_右RadBotz_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 			}
 		}
 		if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -714,7 +714,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
                         if (isAfk(mek.key.remoteJid)) return
                         addafk(mek.key.remoteJid)
 						heheh = ms(Date.now() - waktuafk)
-			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Raditya Zex_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_右RadBotz_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					}
 				}
 						}
@@ -1002,7 +1002,7 @@ if (!settings.autorecording) {
 denz.updatePresence(from, Presence.recording)
 }
 if (budy.startsWith('Denz')){
-sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*_© Raditya Zex_*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*_右RadBotz_*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 }
 if(isButton == 'igm'){
 reply('http://instagram.com/dcodedenpa')
@@ -1073,7 +1073,7 @@ fill =`Hai Kak ${pushname}, ${tampilUcapan}
 Silahkan Pilih Untuk Menampilkan Menu
 
 Jika Button Tidak Muncul Ketik .allmenu`
-menu =`H  E  L  G A   右`
+menu =`右RadBotz`
 gbutsan = [
 {buttonId:`allmenu`,buttonText:{displayText:'📑SHOW MENU'},type:1},
 {buttonId:`owner`,buttonText:{displayText:'👑OWNER'},type:1},
@@ -1129,14 +1129,14 @@ else if(menusimpel = true){
 ├ _Info Nomor : ${num.data.country_code} - ${num.data.carrier.type} - ${num.data.carrier.name}_
 │
 └───「 \`\`\`${NamaBot}\`\`\` 」`
-sendButLocation(from, `${menu}`, "*_© Raditya Zex_*", {jpegThumbnail:ofrply,name:""}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER'},type:1},{buttonId:`script`,buttonText:{displayText:'SOURCE CODE'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_右RadBotz_*", {jpegThumbnail:ofrply,name:""}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER'},type:1},{buttonId:`script`,buttonText:{displayText:'SOURCE CODE'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 break
 case 'allmenu': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 stod = `${sender}`
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-       nama = '🌹Raditya🌹'
+       nama = '❒─「 List Menu 」─❒'
        ownerJid = "994409869765@s.whatsapp.net"
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
@@ -1456,7 +1456,7 @@ mhan = await denz.prepareMessage(from, pporigi, image, {thumbnail: pporigi})
 const btnBngsat = {
 imageMessage: mhan.message.imageMessage,
 contentText: `${menunya}`,
-footerText: `H  E  L  G A   右`,
+footerText: `右RadBotz`,
 buttons: gbutsan,
 headerType: 4
 }
@@ -1475,7 +1475,15 @@ const serialUser = createSerial(18)
 ├ *🔖 Nomor :* @${sender.split('@')[0]}
 ├ *🔖 Seri:* ${serialUser}
 ├ *🔖 Pengguna:* ${_registered.length}
-└❏
+├ *🔖 Jam :* ${jmn}
+├ *🔖 Hari :* ${week} ${weton}
+├ *🔖 Tanggal :* ${calender}
+└────────────❏
+┌❏ INDONESIA TIME
+├ Wib : ${timeWib}
+├ Wita : ${timeWita}
+├ Wit : ${timeWit}  
+└────────────❏
 
 *「 ${NamaBot} 」*`
 gbutsan = [
@@ -1499,7 +1507,7 @@ case 'command':
  stod = `${sender}`
  listMsg = {
  buttonText: 'LIST MENU',
- footerText: '*_© Raditya Zex_*',
+ footerText: '*_右RadBotz_*',
  description: `Hai kak @${stod.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
@@ -2833,7 +2841,7 @@ for (let i of ownerNumber) {
 const vname = denz.contacts[i] != undefined ? denz.contacts[i].vname || denz.contacts[i].notify : undefined
 ini_list.push({
 "displayName": `Developer ${NamaBot}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Dcode Denpa;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Raditya;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
 denz.sendMessage(from, {
@@ -2880,9 +2888,9 @@ break
 │
 └──────[ GITHUB ]──────❒
   │◦➛Script Ory :
-  │◦➛https://youtube.com/channel/UCIvY2o-KctmlKWvXzqrXuWw
+  │◦➛Dcode Denpa
   │◦➛Script Recode : 
-  │◦➛https://github.com/HelgaIlham
+  │◦➛-
   └──────────────────❒`
  buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},
@@ -2901,10 +2909,10 @@ case 'donasi':
 dona = fs.readFileSync('./media/donasi.jpg')
 doni =`*╭─❒ 「 Donasi 」 ──────*
 *│*
-*│*⬡ *Mau donasi apa cuma liat doang?*
-*│*⬡ *OVO     :* ${ovo}
-*│*⬡ *DANA    : ${dana}*
-*│*⬡ *GOPAY    : ${gopay}*
+*│*🔖 *Mau donasi apa cuma liat doang?*
+*│*🔖 *OVO     :* ${ovo}
+*│*🔖 *DANA    : ${dana}*
+*│*🔖 *GOPAY    : ${gopay}*
 *└───────────────────*
 Scan QR di atas bila pengguna Dana`
 denz.sendMessage(from, dona, image, { quoted: ftrol, thumbnail: dona, caption: doni })
@@ -4370,14 +4378,14 @@ case 'stats':
 					const latensi = speed() - timestampu
 					var total = math(`${groups.length} ${privat.length}`)
 					const { wa_version, mcc, mnc, os_version, device_manufacturer, device_model } = denz.user.phone
-					stamtus = `⍟ ────────────────── ⍟
+					stamtus = `❏ ────────────────── ❏
 
 Private Chat : ${privat.length}
 Group Chat : ${groups.length}
 Total Chat : ${totalChat.length}
 Speed : ${latensi.toFixed(4)} second
 Runtime : ${kyun(uptime)}
-Baterai : ${baterai.battery}
+Baterai : Unlimited
 Charged : ${baterai.isCharge}
 Mode : ${publik ? 'public' : 'self'}
 Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}
@@ -4387,12 +4395,12 @@ Platform : ${os.platform()}
 Uptime : ${kyun(os.uptime())}
 MNC : ${mnc}
 MCC : ${mcc}
-Device Model: ${denz.user.phone.device_model}
-Device Manufactur : ${device_manufacturer}
-Wa Version: ${denz.user.phone.wa_version}
-Os Version: ${denz.user.phone.os_version}
+Device Model: OPPO
+Device Manufactur : OPPO S5
+Wa Version: 999999999.9
+Os Version: 13,0,1
 
-⍟ ────────────────── ⍟`
+❏ ────────────────── ❏`
 reply(stamtus)
 break
 				case 'tobc':
